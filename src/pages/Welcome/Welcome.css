@@ -1,44 +1,77 @@
+:root {
+    --main-bg-color: #f7f7f7;
+    --button-bg-color: #5d3ebc;
+    --button-bg-hover-color: #502f9c;
+    --container-bg-color: white;
+    --title-font-size: 2rem;
+    --title-color: #333;
+    --container-padding: 40px;
+    --button-padding-vertical: 15px;
+    --button-padding-horizontal: 30px;
+    --button-margin: 10px;
+    --button-font-size: 1rem;
+    --button-border-radius: 5px;
+    --title-margin-bottom: 30px;
+    --button-container-margin-top: 30px;
+}
+
 .top-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-}
-
-.container-wrapper {
-    text-align: center;
+    background-color: var(--main-bg-color);
 }
 
 .auth-container {
-    background-color: white;
-    padding: 20px;
+    background-color: var(--container-bg-color);
+    padding: var(--container-padding);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: var(--title-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--title-margin-bottom);
 }
 
 .button-container {
-    margin-top: 20px;
+    margin-top: var(--button-container-margin-top);
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px;
+.button-container button {
+    padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+    margin: var(--button-margin);
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-bg-color);
     color: white;
-    font-size: 1rem;
+    font-size: var(--button-font-size);
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.button-container button:hover {
+    background-color: var(--button-bg-hover-color);
+}
+
+@media (max-width: 880px) {
+    .top-container {
+        flex-direction: column;
+    }
+
+    .auth-container {
+        width: 100%;
+        padding: var(--container-padding) var(--container-padding) 60px; /* More padding at the bottom for smaller screens */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+
+    .button-container button {
+        padding: 12px 24px; /* Slightly smaller padding for smaller screens */
+    }
 }
