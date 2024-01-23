@@ -23,7 +23,7 @@ const CreatePresentation = () => {
 
     const validateForm = () => {
         if (!name.trim()) return "Please enter a presentation name.";
-        if (duration <= 0 || duration > 180) return "Duration must be between 1 and 180 minutes.";
+        if (!duration || duration <= 0 || duration > 180) return "Duration must be between 1 and 180 minutes.";
         return "";
     };
 
