@@ -1,0 +1,92 @@
+.agenda-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f5f5f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.track {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.track-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5d3ebc;
+}
+
+.presentation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.presentation {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.presentation:last-child {
+    border-bottom: none;
+}
+
+.time, .name, .duration {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.time {
+    font-weight: 600;
+}
+
+.duration {
+    font-weight: 600;
+    color: #5d3ebc;
+}
+
+.center {
+    text-align: left;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .presentation {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .track {
+        padding: 15px;
+    }
+}
+
+/* Buttons */
+
+.agenda-container .navigation-buttons .MuiButton-root {
+    text-transform: none !important;
+    background-color: var(--button-bg-color) !important;
+    color: white !important;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.agenda-container .navigation-buttons .MuiButton-root:hover {
+    text-transform: none !important;
+    background-color: var(--button-bg-hover-color) !important;
+}
