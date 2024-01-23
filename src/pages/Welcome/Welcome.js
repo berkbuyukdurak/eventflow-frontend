@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { RoutesConfig } from '../../config/RoutesConfig';
 import './Welcome.css';

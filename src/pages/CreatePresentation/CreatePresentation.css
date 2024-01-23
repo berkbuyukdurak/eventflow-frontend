@@ -1,0 +1,104 @@
+:root {
+    --main-bg-color: #f7f7f7;
+    --button-bg-color: #5d3ebc;
+    --button-bg-hover-color: #502f9c;
+    --container-bg-color: white;
+    --title-font-size: 2rem;
+    --title-color: #333;
+}
+
+.top-container, .create-presentation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+.create-presentation-container .MuiButton-root:hover {
+    background-color: var(--button-bg-hover-color) !important;
+}
+
+.container-wrapper, .form-container, .auth-container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: var(--title-font-size);
+    color: var(--title-color);
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.create-presentation-container .navigation-buttons .MuiButton-root {
+    text-transform: none !important;
+    background-color: var(--button-bg-color) !important;
+    color: white !important;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.create-presentation-container .navigation-buttons .MuiButton-root:hover {
+    text-transform: none !important;
+    background-color: var(--button-bg-hover-color) !important;
+}
+
+.create-presentation-container .MuiButton-root {
+    text-transform: none !important;
+    background-color: var(--button-bg-color) !important;
+    color: white !important;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.create-presentation-container .MuiButton-root:hover {
+    text-transform: none !important;
+    background-color: var(--button-bg-hover-color) !important;
+}
+
+.navigation-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 880px) {
+    .top-container, .create-presentation-container {
+        flex-direction: column;
+    }
+
+    .container-wrapper, .form-container, .auth-container {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}
