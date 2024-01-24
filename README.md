@@ -45,3 +45,14 @@ To get a local copy up and running, follow these simple steps:
 ## Technologies Used
 - React.js
 - Material-UI
+
+## Screenshots
+
+### Landing Page
+![Landing Page](./screenshots/landing_page.png)
+
+### Create Presentation
+![Create Presentation](./screenshots/create_presentation.png)
+
+### Conference Agenda
+![Conference Agenda](./screenshots/conference_agenda.png)
